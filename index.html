@@ -6,16 +6,363 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap-core/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/timer.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <title>Edventure '19</title>
 
-    <title>Edventure'19</title>
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/gif" sizes="16x16">
+
+
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+    <!-- Glyphicons -->
+
+  <!-- Navbar -->
   </head>
-  <body>
+  <body style="font-family: 'Maven Pro'">
+    <nav id="homenav" class="navbar navbar-expand-lg navbar-dark navbar-inner">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          Edventure 2019
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Workshops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <!-- Slider -->
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('./assets/img/img1.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Think.</h2>
+            <p class="lead">This is a description for the first slide.</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('./assets/img/img2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Innovate.</h2>
+            <p class="lead">This is a description for the second slide.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('./assets/img/img3.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4">Create.</h2>
+            <p class="lead">This is a description for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </header>
 
+  <!-- About -->
+  <section class="py-5">
+    <div class="container  text-center">
+       <h1 class="display-6">About Edventure.</h1>
+      <p class="lead">
+        EDventure 2019, a novel venture initiated by the Entrepreneurship Development Cell of the College of Engineering Trivandrum, aims to ignite the spark of entrepreneurship in students across the state.
+        <br> <br>
+        The event comprises of a series of talks, workshops, competitions and other events packed into a two day event that truly imbibes its theme – ‘Entrepreneurship in every aspect’. EDventure is a platform for building networks, gaining knowledge and showcasing entrepreneurial prowess.        
+      </p>
+    
+      <div class="container-flex text-center" style="justify-content: center">
+        <div class="row p-5">
+           <p style="width: 100%">
+            <a style="cursor: default" href="#" class="btn btn-dark"><strong>M</strong></a>
+            <a style="cursor: default" href="#" class="btn btn-dark"><strong>A</strong></a>
+            <a style="cursor: default" href="#" class="btn btn-dark"><strong>Y</strong></a>
+
+            <a style="cursor: default" href="#" class="btn btn-warning"><strong>2nd</strong></a>
+            <a style="cursor: default" href="#" class="btn btn-warning"><strong>3rd</strong></a>
+            <a style="cursor: default" href="#" class="btn btn-warning"><strong>4th</strong></a>
+
+          </p>
+         <p style="width:100%" class="text-center"><button class="btn btn-primary btn-lg">Register</button></p>
+
+        </div>
+        <div class="row" style="justify-content: center">
+          <div id="rounded-countdown">
+          <div class="countdown" data-remaining-sec=300000></div>
+          <blockquote class="blockquote mt-4">
+            <p class="mb-0">"Innovation distinguishes between a leader and a follower."</p>
+            <footer class="blockquote-footer"><cite title="Source Title">Steve Jobs</cite></footer>
+          </blockquote>
+        </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <!-- Speaker -->
+    <div class="container-fluid text-center" style="background-color:rgb(249, 250, 252);" style="min-height: 85vh"> 
+          
+          <h1 class="display-5 p-4">Our Speakers.</h1>
+          <div class="row" style="justify-content: center">
+            <div class="card speaker" style="width: 18rem;">
+              <img class="card-img-top circle" src="./assets/img/speakers/1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+            <div class="card speaker" style="width: 18rem;">
+              <img class="card-img-top circle" src="./assets/img/speakers/2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+            <div class="card speaker" style="width: 18rem;">
+              <img class="card-img-top circle" src="./assets/img/speakers/3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+            <div class="card speaker" style="width: 18rem;">
+              <img class="card-img-top circle" src="./assets/img/speakers/4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+            <div class="card speaker" style="width: 18rem;">
+              <img class="card-img-top circle" src="./assets/img/speakers/6.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+            <div class="card speaker" style="width: 18rem;">
+              <img class="card-img-top circle" src="./assets/img/speakers/5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-sm btn-info m-4">View all Speakers</a>
+    </div>
+  </section>
+
+  <!-- Events and Workshops -->
+  <div class="container-fluid text-center">
+    <h1 class="display-6 p-4">Events, Workshops et al.</h1>
+    <div class="row" style="flex-direction: row;justify-content: space-evenly; align-items: center;">
+      <div class="card margin" style="width: 18rem;">
+        <img src="./assets/img/people.jpg" class="card-img-top" alt="image">
+        <div class="card-body">
+          <h5 class="card-title">Talk Series</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
+        </ul>
+      </div>
+
+      <div class="card margin" style="width: 18rem;">
+        <img src="./assets/img/people.jpg" class="card-img-top" alt="image">
+        <div class="card-body">
+          <h5 class="card-title">Workshops</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
+        </ul>
+      </div>
+
+      <div class="card margin" style="width: 18rem;">
+        <img src="./assets/img/people.jpg" class="card-img-top" alt="image">
+        <div class="card-body">
+          <h5 class="card-title">Competitions</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
+        </ul>
+      </div>
+
+      <div class="card margin" style="width: 18rem;">
+        <img src="./assets/img/people.jpg" class="card-img-top" alt="image">
+        <div class="card-body">
+          <h5 class="card-title">Conclave</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
+        </ul>
+      </div>
+
+    </div>
+          <a href="#" class="btn btn-sm btn-primary m-4">View all Events</a>
+  </div>
+  <!-- Schedule rgb(249, 246, 182) -->
+  <div class="container-flex text-center" style="background-color: rgb(249, 250, 252); ">
+    <h1 class="display-5 p-4">Our Sponsors.</h1>
+    <div class="container mb-5">
+     <section class="customer-logos slider">
+        <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+     </section>
+    </div> 
+    <!-- Footer -->
+  <div class="container-flex">
+    <footer class="container py-5" style="background-color: rgb(252, 235, 235)">
+      <div class="row">
+        <div class="col-12 col-md">
+          
+          <small class="d-block mb-3 text-muted">&copy; IEDC@CET 2019</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+    
+
+
+
+  </div>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, Slick for slider -->
+    <script src="./bootstrap-core/jquery.min.js" ></script>
+    <script src="./bootstrap-core/popper.min.js"></script>
+    <script src="./bootstrap-core/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <!-- Timer Scripts-->
+    <!-- SRIPTS -->
+    <script>
+      //Countdown
+      var date1 = $.now();
+      var date2 = new Date(2019,4,2,9,0,0,0);
+      date2 = date2.getTime();
+      var timeDiff = Math.ceil((date2 - date1)/1000);
+      timeDiff = timeDiff > 0? timeDiff: 0;
+
+      $('.countdown').attr('data-remaining-sec', timeDiff); 
+      //Sponsor slider
+      $(document).ready(function(){
+    $('.customer-logos').slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              arrows: false,
+              dots: false,
+              pauseOnHover: false,
+              responsive: [{
+                  breakpoint: 768,
+                  settings: {
+                      slidesToShow: 4
+                  }
+              }, {
+                  breakpoint: 520,
+                  settings: {
+                      slidesToShow: 3
+                  }
+              }]
+          });
+      });
+    </script>
+    <script src="./assets/js/tether.min.js"></script>
+    <script src="./assets/js/jquery.classycountdown.js"></script>
+    <script src="./assets/js/jquery.knob.js"></script>
+    <script src="./assets/js/jquery.throttle.js"></script>  
+    <script src="./assets/js/scripts.js"></script>
+    <!-- Timer ends-->
+
+    <!-- Glyphicons -->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
   </body>
 </html>
