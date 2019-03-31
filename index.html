@@ -23,6 +23,14 @@
   <!-- Navbar -->
   </head>
   <body style="font-family: 'Maven Pro'">
+    <div id="overlay">
+        <div class="circle">
+            <div class="wave"></div>
+        </div>
+    </div>
+    <div class="circle">
+        <div class="wave"></div>
+    </div>
     <nav id="homenav" class="navbar navbar-expand-lg navbar-dark navbar-inner">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
@@ -141,7 +149,7 @@
           <h1 class="display-5 p-4">Our Speakers.</h1>
           <div class="row" style="justify-content: center">
             <div class="card speaker" style="width: 18rem;">
-              <img class="card-img-top circle" src="./assets/img/speakers/1.jpg" alt="Card image cap">
+              <img class="card-img-top encircle" src="./assets/img/speakers/1.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -149,7 +157,7 @@
               </div>
             </div>
             <div class="card speaker" style="width: 18rem;">
-              <img class="card-img-top circle" src="./assets/img/speakers/2.jpg" alt="Card image cap">
+              <img class="card-img-top encircle" src="./assets/img/speakers/2.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -157,7 +165,7 @@
               </div>
             </div>
             <div class="card speaker" style="width: 18rem;">
-              <img class="card-img-top circle" src="./assets/img/speakers/3.jpg" alt="Card image cap">
+              <img class="card-img-top encircle" src="./assets/img/speakers/3.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -165,7 +173,7 @@
               </div>
             </div>
             <div class="card speaker" style="width: 18rem;">
-              <img class="card-img-top circle" src="./assets/img/speakers/4.jpg" alt="Card image cap">
+              <img class="card-img-top encircle" src="./assets/img/speakers/4.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -173,7 +181,7 @@
               </div>
             </div>
             <div class="card speaker" style="width: 18rem;">
-              <img class="card-img-top circle" src="./assets/img/speakers/6.jpg" alt="Card image cap">
+              <img class="card-img-top encircle" src="./assets/img/speakers/6.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -181,7 +189,7 @@
               </div>
             </div>
             <div class="card speaker" style="width: 18rem;">
-              <img class="card-img-top circle" src="./assets/img/speakers/5.jpg" alt="Card image cap">
+              <img class="card-img-top encircle" src="./assets/img/speakers/5.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -401,6 +409,15 @@
               }]
           });
       });
+
+      //Loading spinner
+      // Hide preloader on page load
+        const overlay = document.querySelector('#overlay');
+
+        window.addEventListener('load', function()
+        {
+            overlay.style.display = 'none';
+        });
     </script>
     <script src="./assets/js/tether.min.js"></script>
     <script src="./assets/js/jquery.classycountdown.js"></script>
