@@ -11,6 +11,28 @@
 /* Slider ends */
 
 /* Custom */
+
+/* Icons */
+
+ion-icon {
+  font-size: 2rem;
+}
+
+/* Disable anchor style */
+.reset-a, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+  cursor: pointer;
+}
+
+.reset-a:hover {
+    text-decoration: none;
+    color: #fff;
+    outline: 0;
+    cursor: pointer;
+}
+
 /* Overlay for spinner*/
 #overlay {
     position: fixed;
