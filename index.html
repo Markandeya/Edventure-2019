@@ -511,8 +511,9 @@
       //Countdown
       var date1 = $.now();
       var date2 = new Date(2019,4,2,9,0,0,0);
+      console.log("now=",new Date(date1), ", date2=", date2);
       date2 = date2.getTime();
-      var timeDiff = Math.ceil((date2 - date1)/2000);
+      var timeDiff = Math.ceil((date2 - date1)/1000);
       timeDiff = timeDiff > 0? timeDiff: 0;
 
       $('.countdown').attr('data-remaining-sec', timeDiff); 
