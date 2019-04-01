@@ -289,3 +289,11 @@ ion-icon {
     }
 }
 /* Spinner ends*/
+
+.eventbox {
+    background-color: white;
+}
+
+.eventboxInverse {
+    background-color: whitesmoke;
+}
