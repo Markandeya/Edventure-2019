@@ -113,7 +113,7 @@ ion-icon {
 
 /* Home page navigation */
 #homenav {
-    font-family: 'Maven Pro'; 
+    font-family: 'Josefin Slab', serif; 
     position:absolute;
     z-index: 999; 
     width:100%
@@ -313,4 +313,49 @@ ion-icon {
 
 .eventboxInverse {
     background-color: whitesmoke;
+}
+
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+FROM THE TEMPLATE |   | -----------------------------------------------------------
+----------------- V - V -----------------------------------------------------------
+-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Homepage - Info Section
+--------------------------------------------------------------*/
+.homepage-info-section {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.homepage-info-section figure {
+    padding-right: 30px;
+}
+
+.homepage-info-section figure img {
+    max-width: 100%;
+}
+
+.homepage-info-section .entry-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    color: #232127;
+}
+
+.homepage-info-section .entry-content {
+    margin-top: 32px;
+}
+
+.homepage-info-section .entry-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.homepage-info-section .entry-footer a {
+    margin-top: 32px;
+    margin-right: 18px;
 }
