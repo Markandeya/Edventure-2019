@@ -1,75 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./bootstrap-core/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/timer.css">
-    <link rel="stylesheet" href="./assets/css/custom.css">
-    <title>Edventure '19</title>
-    
-    <!-- Animation CSS -->
-    <link rel="stylesheet" href="./assets/css/aos.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicon -->
-    <link rel="icon" href="./assets/img/favicon.png" type="image/gif" sizes="16x16">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap-core/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/timer.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <title>Edventure '19</title>
+
+  <!-- Animation CSS -->
+  <link rel="stylesheet" href="./assets/css/aos.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/img/favicon.png" type="image/gif" sizes="16x16">
 
 
-    <!-- Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <!-- Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 
-    <!-- Glyphicons -->
+  <!-- Glyphicons -->
 
   <!-- Navbar -->
-  </head>
-  <body style="font-family: 'Josefin Slab', serif">
-    <div id="overlay">
-        <div class="circle">
-            <div class="wave"></div>
-        </div>
-    </div>
+</head>
+
+<body style="font-family: 'Josefin Slab', serif">
+  <div id="overlay">
     <div class="circle">
-        <div class="wave"></div>
+      <div class="wave"></div>
     </div>
-    <nav id="homenav" style="font-size: 1.5rem" class="navbar navbar-expand-lg navbar-dark navbar-inner">
-      <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          EDVENTURE '19
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME
-                    <span class="sr-only">(current)</span>
-                  </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#events">EVENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SPEAKERS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./workshops.html">WORKSHOPS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">TEAM</a>
-            </li>
-          </ul>
-        </div>
+  </div>
+  <div class="circle">
+    <div class="wave"></div>
+  </div>
+  <nav id="homenav" style="font-size: 1.5rem" class="navbar navbar-expand-lg navbar-dark navbar-inner">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        EDVENTURE '19
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events">EVENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SPEAKERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./workshops.html">WORKSHOPS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TEAM</a>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
   <!-- Slider -->
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  data-interval="4500">
-      <div id="mainlogo">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4500">
+      <div class="container" id="mainlogo">
         <img src="./assets/img/Untitled-2.png" alt="Edventure 2019">
+        <br>
+        <br>
+        <br>
+        <!-- Display the countdown timer in an element -->
+        <h1 class="text-center font-weight-bold" style="font-size:3.5vw;color: lightgrey">Hurry up. Only <span
+            id="demo"></span> left. <br><br> Register Now</h1>
       </div>
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -78,107 +87,109 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('./assets/img/new/bg-1.jpeg')">
+        <div class="carousel-item active" style="background-image: url('./assets/img/img3.jpg')">
           <div class="carousel-caption d-md-block">
-            <h2 class="display-4">Innovate</h2>
-            <p class="lead">Brew concoctions fuming steam of change.</p>
+
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('./assets/img/new/bg31.jpg')">
+        <div class="carousel-item" style="background-image: url('./assets/img/img2.jpg')">
           <div class="carousel-caption d-md-block">
-            <h2 class="display-4">Inspire.</h2>
-            <p class="lead">Brew concoctions fuming steam of change. </p>
+
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('./assets/img/new/bg21.JPG')">
           <div class="carousel-caption d-md-block">
-            <h2 class="display-4">Motivate.</h2>
-            <p class="lead">To solve cutting edge problems.</p>
+            <!--h2 class="display-4">Motivate.</h2>
+            <p class="lead">To solve cutting edge problems.</p-->
           </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </header>
 
   <!-- About -->
   <section>
     <div class="container  text-center"></div>
-      <div class="homepage-info-section" >
-          <div class="container">
-              <div class="row">
-                  <div class="col-12 col-md-4 col-lg-5">
-                      <figure>
-                          <img src="./assets/img/new/favicon.png"  alt="logo">
-                      </figure>
-                  </div>
-      
-                  <div class="col-12 col-md-8 col-lg-7">
-                      <header class="entry-header">
-                          <h2 class="entry-title" data-aos="fade-down" data-aos-delay="50"
-                          data-aos-duration="2000">About Edventure.</h2>
-                      </header>
-                      <br>
-                      <div >
-                        <p class="lead" data-aos="fade-up" data-aos-delay="60"
-                        data-aos-duration="2000">
-                        Edventure19 is an event spanning three days, organized by the Innovation and Entrepreneurship development cell of College of Engineering Trivandrum to bring together a dynamic group of thinkers and doers in a provocative setting. 
-                        It hosts an array of activities and contests that will exemplify the holistic world view and ideas of participants capable of positively impacting our planet in new ways. 
-                            <br><br>
-                            Edventure19 provides a platform to initiate new connections, collaborations and progress among pioneers and aspirants of the entrepreneur community whose future glitters with extraordinary promise.        
-                          </p>
-                      </div>
-      
-                      <!--footer class="entry-footer">
+    <div class="homepage-info-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5">
+            <figure>
+              <img src="./assets/img/new/favicon.png" alt="logo">
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-8 col-lg-7">
+            <header class="entry-header">
+              <h2 class="entry-title" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">About Edventure.
+              </h2>
+            </header>
+            <br>
+            <div>
+              <p class="lead" data-aos="fade-up" data-aos-delay="60" data-aos-duration="2000">
+                Edventure19 is an event spanning three days, organized by the Innovation and Entrepreneurship
+                development cell of College of Engineering Trivandrum to bring together a dynamic group of thinkers and
+                doers in a provocative setting.
+                It hosts an array of activities and contests that will exemplify the holistic world view and ideas of
+                participants capable of positively impacting our planet in new ways.
+                <br><br>
+                Edventure19 provides a platform to initiate new connections, collaborations and progress among pioneers
+                and aspirants of the entrepreneur community whose future glitters with extraordinary promise.
+              </p>
+            </div>
+
+            <!--footer class="entry-footer">
                           <a href="#" class="btn gradient-bg">Read More</a>
                           <a href="#" class="btn dark">Register Now</a>
                       </footer-->
-                  </div>
-              </div>
           </div>
-      </div>
-    
-      <div class="container-flex text-center" style="justify-content: center">
-        <div class="row p-5">
-           <p style="width: 100%">
-            <a style="cursor: default" href="#" class="btn btn-dark"><strong>M</strong></a>
-            <a style="cursor: default" href="#" class="btn btn-dark"><strong>A</strong></a>
-            <a style="cursor: default" href="#" class="btn btn-dark"><strong>Y</strong></a>
-
-            <a style="cursor: default" href="#" class="btn btn-warning"><strong>10th</strong></a>
-            <a style="cursor: default" href="#" class="btn btn-warning"><strong>11th</strong></a>
-            <a style="cursor: default" href="#" class="btn btn-warning"><strong>12th</strong></a>
-
-          </p>
-         <p style="width:100%" class="text-center"><button id="register" class="btn btn-primary btn-lg">Register</button><div class="popup">Coming soon!</div></p>
-
         </div>
-        <div class="row" style="justify-content: center">
-          <div id="rounded-countdown">
+      </div>
+    </div>
+
+    <!--div class="container-flex text-center" style="justify-content: center">
+      <div class="row p-5">
+        <p style="width: 100%">
+          <a style="cursor: default" href="#" class="btn btn-dark"><strong>M</strong></a>
+          <a style="cursor: default" href="#" class="btn btn-dark"><strong>A</strong></a>
+          <a style="cursor: default" href="#" class="btn btn-dark"><strong>Y</strong></a>
+
+          <a style="cursor: default" href="#" class="btn btn-warning"><strong>10th</strong></a>
+          <a style="cursor: default" href="#" class="btn btn-warning"><strong>11th</strong></a>
+          <a style="cursor: default" href="#" class="btn btn-warning"><strong>12th</strong></a>
+
+        </p>
+        <p style="width:100%" class="text-center"><button id="register" class="btn btn-primary btn-lg">Register</button>
+          <div class="popup">Coming soon!</div>
+        </p>
+
+      </div>
+      <div class="row" style="justify-content: center">
+        <div id="rounded-countdown">
           <div class="countdown" data-remaining-sec=300000></div>
-          <blockquote class="blockquote mt-4" data-aos="fade-right" data-aos-delay="50"
-    data-aos-duration="1000">
+          <blockquote class="blockquote mt-4" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
             <p class="mb-0">"Innovation distinguishes between a leader and a follower."</p>
             <footer class="blockquote-footer"><cite title="Source Title">Steve Jobs</cite></footer>
           </blockquote>
         </div>
-        </div>
-        
       </div>
+
+    </div-->
 
     </div>
 
     <!-- Speaker -->
- <!--    <div class="container-fluid text-center" style="background-color:rgb(249, 250, 252);" style="min-height: 85vh"> 
+    <!--    <div class="container-fluid text-center" style="background-color:rgb(249, 250, 252);" style="min-height: 85vh"> 
           
           <h1 class="display-5 p-4" data-aos="slide-up" data-aos-delay="50"
     data-aos-duration="2000">Our Speakers.</h1>
@@ -346,167 +357,170 @@
               </div>
             </div>
           </div> -->
-          <!-- <a href="#" class="btn btn-sm btn-info m-4" data-aos="fade-left" data-aos-delay="50"
+    <!-- <a href="#" class="btn btn-sm btn-info m-4" data-aos="fade-left" data-aos-delay="50"
     data-aos-duration="2000">View all Speakers</a>
     </div>
   </section>
  -->
-  <!-- Events and Workshops -->
-  <div class="container-fluid text-center">
-    <h1 class="display-6 p-4" id="events">Events, Workshops et al.</h1>
-    <div class="row" style="flex-direction: row;justify-content: space-evenly; align-items: center;">
-      <div class="card margin"  style="width: 18rem;">
-        <img src="./assets/img/clipart/talk.jpg" class="card-img-top" alt="image">
-        <div class="card-body">
-          <h5 class="card-title">Talk Series</h5>
-          <p class="card-text" data-aos="fade-down" data-aos-delay="100"
-    data-aos-duration="2000">A celebration of incredible stories and thoughts of outliers from a diversity of fields.
+    <!-- Events and Workshops -->
+    <div class="container-fluid text-center">
+      <h1 class="display-6 p-4" id="events">Events, Workshops et al.</h1>
+      <div class="row" style="flex-direction: row;justify-content: space-evenly; align-items: center;">
+        <div class="card margin" style="width: 18rem;">
+          <img src="./assets/img/clipart/talk.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Talk Series</h5>
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">A celebration of
+              incredible stories and thoughts of outliers from a diversity of fields.
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
+          </ul>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
-        </ul>
-      </div>
 
-      <div class="card margin"  style="width: 18rem;">
-        <a class="reset-a" href="./workshops.html">
-        <img src="./assets/img/clipart/workshop.jpg" class="card-img-top" alt="image">
-        <div class="card-body">
-          <h5 class="card-title">Workshops</h5>
-          <p class="card-text" data-aos="fade-down" data-aos-delay="100"
-    data-aos-duration="2000">Master new, purpose-driven skills and acheive goals with expert instruction and guidance.
-          </p>
+        <div class="card margin" style="width: 18rem;">
+          <a class="reset-a" href="./workshops.html">
+            <img src="./assets/img/clipart/workshop.jpg" class="card-img-top" alt="image">
+            <div class="card-body">
+              <h5 class="card-title">Workshops</h5>
+              <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">Master new,
+                purpose-driven skills and acheive goals with expert instruction and guidance.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="./workshops.html" class="card-link">Learn more</a></li>
+            </ul>
+          </a>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a href="./workshops.html" class="card-link">Learn more</a></li>
-        </ul>
-      </a>
-      </div>
 
-      <div class="card margin"  style="width: 18rem;">
-        <img src="./assets/img/clipart/competition.jpg" class="card-img-top" alt="image">
-        <div class="card-body">
-          <h5 class="card-title">Competitions</h5>
-          <p class="card-text" data-aos="fade-down" data-aos-delay="100"
-    data-aos-duration="2000">An entrepreneurial experience in a competitive setting to broaden your horizons and to bring out your best.
-          </p>
+        <div class="card margin" style="width: 18rem;">
+          <img src="./assets/img/clipart/competition.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Competitions</h5>
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">An entrepreneurial
+              experience in a competitive setting to broaden your horizons and to bring out your best.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
+          </ul>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
-        </ul>
-      </div>
 
-      <div class="card margin"  style="width: 18rem;">
-        <img src="./assets/img/clipart/conclave.jpg" class="card-img-top" alt="image">
-        <div class="card-body">
-          <h5 class="card-title">Conclave</h5>
-          <p class="card-text" data-aos="fade-down" data-aos-delay="100"
-    data-aos-duration="2000">An outstanding slate of eminent alumnus of CET explain technical concepts to make entrepreneurial knowledge accessible.
-          </p>
+        <div class="card margin" style="width: 18rem;">
+          <img src="./assets/img/clipart/conclave.jpg" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Conclave</h5>
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">An outstanding slate
+              of eminent alumnus of CET explain technical concepts to make entrepreneurial knowledge accessible.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
+          </ul>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
-        </ul>
-      </div>
-        <div class="card margin"  style="width: 18rem;">
+        <div class="card margin" style="width: 18rem;">
           <img src="./assets/img/clipart/expo.jpg" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">Project Expo</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="100"
-    data-aos-duration="2000">A confluence of the hottest trailblazing technology that born out of the minds of creators.
-</p>
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">A confluence of the
+              hottest trailblazing technology that born out of the minds of creators.
+            </p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
           </ul>
         </div>
-  
-        <div class="card margin"  style="width: 18rem;">
+
+        <div class="card margin" style="width: 18rem;">
           <img src="./assets/img/clipart/startup.jpg" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">Startup Expo</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="100"
-    data-aos-duration="2000">An arena to showcase your talent and your penchant for entrepreneurship to venture capitalists.
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">An arena to showcase
+              your talent and your penchant for entrepreneurship to venture capitalists.
             </p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
           </ul>
         </div>
-  
-        <div class="card margin"  style="width: 18rem;">
+
+        <div class="card margin" style="width: 18rem;">
           <img src="./assets/img/clipart/panel.jpg" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">Panel Disussions</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="100"
-    data-aos-duration="2000">An unforgettable gathering of minds and perspectives on the pressing issues of today's society.
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">An unforgettable
+              gathering of minds and perspectives on the pressing issues of today's society.
             </p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
           </ul>
         </div>
-  
-        <div class="card margin"  style="width: 18rem;">
+
+        <div class="card margin" style="width: 18rem;">
           <img src="./assets/img/clipart/discussion.jpg" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">RoundTable Talks</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="50"
-    data-aos-duration="2000">Candid answers to your burning questions on entrepreneurship and the like from the champions themselves.
+            <p class="card-text" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">Candid answers to
+              your burning questions on entrepreneurship and the like from the champions themselves.
             </p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
           </ul>
         </div>
-    
-        <div class="card margin"  style="width: 18rem;">
+
+        <div class="card margin" style="width: 18rem;">
           <img src="./assets/img/clipart/bootcamp.jpg" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">Bootcamp Summit</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="100"
-    data-aos-duration="2000">A memorable gathering of various IEDC chapters of Kerala to plant and grow relations.
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">A memorable
+              gathering of various IEDC chapters of Kerala to plant and grow relations.
             </p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
           </ul>
         </div>
-  
-        <div class="card margin"  style="width: 18rem;">
+
+        <div class="card margin" style="width: 18rem;">
           <img src="./assets/img/clipart/bean.jpg" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">Spill the Beans</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="50"
-    data-aos-duration="2000">Casually hang out with some of the most promising young entrepreneurs to pick their thoughts.
+            <p class="card-text" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">Casually hang out
+              with some of the most promising young entrepreneurs to pick their thoughts.
             </p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="#" class="card-link">Learn more</a></li>
           </ul>
         </div>
+      </div>
+
+      <a href="#" class="btn btn-sm btn-primary m-4" data-aos="fade-left" data-aos-delay="50"
+        data-aos-duration="2000">View all Events</a>
+    </div>
+    <!-- About IEDC-->
+    <div class="container-flex  text-center" style="background-color:rgb(249, 250, 252);" style="min-height: 85vh">
+
+      <h1 class="display-5 p-4" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">IEDC at CET.</h1>
+      <div class="row" style="justify-content: center">
+        <p class="container justify-content-center lead p-3" data-aos="fade-in" data-aos-delay="50"
+          data-aos-duration="1000">
+          The Innovation and Entrepreneurship Development Cell (IEDC) is an active student-run cell under College of
+          Engineering Trivandrum Centre for Interdisciplinary Research (CCIR) that seeks to create and promote
+          innovation and entrepreneurship skills among the students of CET. It acts to foster innovative thinking and is
+          a facilitator between the students and the industries outside by acting as a hub of contacts that helps the
+          wannabe entrepreneurs in finding the right people to approach for any task.
+        </p>
+      </div>
     </div>
 
-          <a href="#" class="btn btn-sm btn-primary m-4" data-aos="fade-left" data-aos-delay="50"
-    data-aos-duration="2000">View all Events</a>
-  </div>
-  <!-- About IEDC-->
-      <div class="container-flex  text-center" style="background-color:rgb(249, 250, 252);" style="min-height: 85vh"> 
-          
-          <h1 class="display-5 p-4" data-aos="fade-in" data-aos-delay="50"
-    data-aos-duration="2000">IEDC at CET.</h1>
-          <div class="row" style="justify-content: center">
-            <p class="container justify-content-center lead p-3" data-aos="fade-in" data-aos-delay="50"
-    data-aos-duration="1000">
-              The Innovation and Entrepreneurship Development Cell (IEDC) is an active student-run cell under College of Engineering Trivandrum Centre for Interdisciplinary Research (CCIR) that seeks to create and promote innovation and entrepreneurship skills among the students of CET. It acts to foster innovative thinking and is a facilitator between the students and the industries outside by acting as a hub of contacts that helps the wannabe entrepreneurs in finding the right people to approach for any task.
-            </p>
-          </div>
-    </div>
-
-  <!-- Schedule -->
-  <div class="container-flex text-center" >
-    <!-- <h1 class="display-5 p-4">Our Sponsors.</h1> -->
-    <div class="container mb-5">
-     <!-- <section class="customer-logos slider">
+    <!-- Schedule -->
+    <div class="container-flex text-center">
+      <!-- <h1 class="display-5 p-4">Our Sponsors.</h1> -->
+      <div class="container mb-5">
+        <!-- <section class="customer-logos slider">
         <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
         <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
         <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
@@ -516,44 +530,50 @@
         <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
         <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
      </section> -->
-    </div> 
-    <!-- Footer -->
-  <div class="container-flex">
-    <footer class="container py-5" style="background-color: rgb(252, 235, 235)">
-      <div class="row">
-        <div class="col-12 col-md">
-          <h5>Contact us</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Shihab</a></li>
-            <li><a class="text-muted" href="#">Email at :shihabudheenmn@gmail.com</a></li>
-            <li><a class="text-muted" href="#">Phone: 8893464456</a></li>
-            <br>
-            <li><a class="text-muted" href="#">Gokul Pradeep</a></li>
-            <li><a class="text-muted" href="#">Email at: gokulpradeep@cet.ac.in</a></li>
-            <li><a class="text-muted" href="#">Phone: 8714224470</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="row text-center" style="justify-content: center; flex-direction: column;">
-        <p class="text-muted">IEDC CET 2019 &copy; </p >
-        <p>
-            <a href="https://www.facebook.com/cetedc/" class="reset-a" size="large"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="https://www.twitter.com/cet_edc
-" class="reset-a" size="large"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="https://www.linkedin.com/company/entrepreneurship-development-cell
-" class="reset-a" size="large"><ion-icon name="logo-linkedin"></ion-icon></a>
-        </p>
+      <!-- Footer -->
+      <div class="container-flex">
+        <footer class="container py-5" style="background-color: rgb(252, 235, 235)">
+          <div class="row">
+            <div class="col-12 col-md">
+              <h5>Contact us</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Shihab</a></li>
+                <li><a class="text-muted" href="#">Email at :shihabudheenmn@gmail.com</a></li>
+                <li><a class="text-muted" href="#">Phone: 8893464456</a></li>
+                <br>
+                <li><a class="text-muted" href="#">Gokul Pradeep</a></li>
+                <li><a class="text-muted" href="#">Email at: gokulpradeep@cet.ac.in</a></li>
+                <li><a class="text-muted" href="#">Phone: 8714224470</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row text-center" style="justify-content: center; flex-direction: column;">
+            <p class="text-muted">IEDC CET 2019 &copy; </p>
+            <p>
+              <a href="https://www.facebook.com/cetedc/" class="reset-a" size="large">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="https://www.twitter.com/cet_edc
+" class="reset-a" size="large">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="https://www.linkedin.com/company/entrepreneurship-development-cell
+" class="reset-a" size="large">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </p>
+          </div>
+        </footer>
       </div>
-    </footer>
-  </div>
-    
 
 
 
-  </div>
+
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, Slick for slider -->
-    <script src="./bootstrap-core/jquery.min.js" ></script>
+    <script src="./bootstrap-core/jquery.min.js"></script>
     <script src="./bootstrap-core/popper.min.js"></script>
     <script src="./bootstrap-core/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
@@ -562,73 +582,77 @@
     <script>
       //Countdown
       var date1 = $.now();
-      var date2 = new Date(2019,4,10,9,0,0,0);
-      console.log("now=",new Date(date1), ", date2=", date2);
+      var date2 = new Date(2019, 4, 10, 9, 0, 0, 0);
+      console.log("now=", new Date(date1), ", date2=", date2);
       date2 = date2.getTime();
-      var timeDiff = Math.ceil((date2 - date1)/1000);
-      timeDiff = timeDiff > 0? timeDiff: 0;
+      var timeDiff = Math.ceil((date2 - date1) / 1000);
+      timeDiff = timeDiff > 0 ? timeDiff : 0;
 
-      $('.countdown').attr('data-remaining-sec', timeDiff); 
+      $('.countdown').attr('data-remaining-sec', timeDiff);
       //Sponsor slider
-      $(document).ready(function(){
-    $('.customer-logos').slick({
-              slidesToShow: 6,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoplaySpeed: 1500,
-              arrows: false,
-              dots: false,
-              pauseOnHover: false,
-              responsive: [{
-                  breakpoint: 768,
-                  settings: {
-                      slidesToShow: 4
-                  }
-              }, {
-                  breakpoint: 520,
-                  settings: {
-                      slidesToShow: 3
-                  }
-              }]
-          });
+      $(document).ready(function () {
+        $('.customer-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [{
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 4
+            }
+          }, {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 3
+            }
+          }]
+        });
       });
 
       //Loading spinner
       // Hide preloader on page load
-        const overlay = document.querySelector('#overlay');
+      const overlay = document.querySelector('#overlay');
 
-        window.addEventListener('load', function()
-        {
-            //overlay.style.display = 'none';
-            $('.circle').remove();
-            $('.wave').remove();
-            $(overlay).remove();
-        });
+      window.addEventListener('load', function () {
+        //overlay.style.display = 'none';
+        $('.circle').remove();
+        $('.wave').remove();
+        $(overlay).remove();
+      });
 
-        var ref = $('#register');
-        var popup = $('.popup');
-        popup.hide();
-        ref.click(function(click) {
-         popup.show();
-         var popper = new Popper(ref, popup,  {
-            placement :'bottom'
-         })
-        });
+      var ref = $('#register');
+      var popup = $('.popup');
+      popup.hide();
+      ref.click(function (click) {
+        popup.show();
+        var popper = new Popper(ref, popup, {
+          placement: 'bottom'
+        })
+      });
     </script>
     <script src="./assets/js/tether.min.js"></script>
     <script src="./assets/js/jquery.classycountdown.js"></script>
     <script src="./assets/js/jquery.knob.js"></script>
-    <script src="./assets/js/jquery.throttle.js"></script>  
+    <script src="./assets/js/jquery.throttle.js"></script>
     <script src="./assets/js/scripts.js"></script>
     <!-- Timer ends-->
     <!-- Animation -->
     <script src="./assets/js/aos.js">
     </script>
     <script>
-         AOS.init({once: true});
+      AOS.init({
+        once: true
+      });
     </script>
     <!-- Glyphicons -->
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
-  </body>
+    <script src="./assets/js/timer.js"></script>
+
+</body>
+
 </html>
