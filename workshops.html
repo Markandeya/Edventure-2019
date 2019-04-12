@@ -90,6 +90,7 @@
     data-aos-duration="2000">Gear yourself up to learn how to connect mundane things together with internet as we extend Internet of Things beyond the usual physical devices like laptops, smart phones and PC's .</p>
             <hr>
           <button id="register" type="button" class="btn btn-info ">Register</button>
+          <div class="popup text-info">Coming soon!</div>
           </div>
         </div>
       </div>
@@ -101,7 +102,8 @@
             <p class="card-text" data-aos="fade-up" data-aos-delay="100"
     data-aos-duration="2000">Do you want to design and create your own objects? <br> Fab lab provides the platform for creating you own designs using computer controlled tools that can help you make literally anything!!Do hurry and grab your seats for making your “anything”.  </p>
             <hr>
-          <button type="button" class="btn btn-info ">Register</button>
+          <button id="register" type="button" class="btn btn-info ">Register</button>
+          <div class="popup text-info">Coming soon!</div>
           </div>
         </div>
       </div>
@@ -113,7 +115,8 @@
             <p class="card-text" data-aos="fade-up" data-aos-delay="100"
     data-aos-duration="2000">Patent is a familiar term associated with a new invention or a discover when made that provides rights to the person who made made that invention or discovery.But do you know more about it? Wanna know how you get the patent rights?Make yourself present at the workshop that give you all the information you need so that if you invent something,the patent will be in your hands!!!</p>
             <hr>
-          <button type="button" class="btn btn-info ">Register</button>
+          <button id="register" type="button" class="btn btn-info ">Register</button>
+          <div class="popup text-info">Coming soon!</div>
           </div>
         </div>
       </div>
@@ -130,7 +133,8 @@
     <br><br>
         Edventure 19 gives you the opportunity to get intimate learning of Digital Marketing through this workshop which is open to all. </p>
         <hr>
-          <button type="button" class="btn btn-info ">Register</button>
+          <button id="register" type="button" class="btn btn-info ">Register</button>
+          <div class="popup text-info">Coming soon!</div>
           </div>
         </div>
       </div>
@@ -144,7 +148,8 @@
         different demands on that stock.<br>”Do you want to learn about this concept of marketing and business  in the most non technical way possible?You will arrive to the right place when you grab seats in this edventure 19 workshop.</p>
 
           <hr>
-          <button type="button" class="btn btn-info ">Register</button>
+          <button id="register" type="button" class="btn btn-info ">Register</button>
+          <div class="popup text-info">Coming soon!</div>
           </div>
 
         </div>
@@ -206,6 +211,15 @@
             $(overlay).remove();
         });
 
+        var ref = $('#register');
+        var popup = $('.popup');
+        popup.show();
+        ref.click(function(click) {
+         popup.show();
+         var popper = new Popper(ref, popup,  {
+            placement :'bottom'
+         })
+        });
     </script>
     <!-- Animation -->
     <script src="./assets/js/aos.js">
