@@ -22,6 +22,19 @@
 /* Hero */
 
 /* Custom */
+.gradient {
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);}
+
+#registernow {
+    border: 1.5px solid white; 
+    padding: 6px;
+}
+#registernow:hover {
+    border: 1.5px solid cadetblue; 
+    padding: 6px;
+}
+
 
 @media screen and (max-device-width: 480px){
   #mainlogo {
@@ -39,8 +52,9 @@
 
 /* logo startup expo*/
 .logo {
-    max-width: 11rem;
-    max-height: 11rem;
+    max-width: 8rem;
+    max-height: 8rem;
+    padding: 3px;
 }
 
 /*Card header */
@@ -91,7 +105,7 @@ ion-icon {
 
 .reset-a:hover {
     text-decoration: none;
-    color: #4f6fa5;
+    color: cadetblue;
     outline: 0;
     cursor: pointer;
 }
@@ -337,7 +351,6 @@ FROM THE TEMPLATE |   | --------------------------------------------------------
 --------------------------------------------------------------*/
 .homepage-info-section {
     padding: 120px 0;
-    background: #fff;
 }
 
 .homepage-info-section figure {
