@@ -1,3 +1,24 @@
+@font-face {
+    font-family: PopThin;
+    src: url('../fonts/Poppins-Thin.ttf');
+}
+
+@font-face {
+    font-family: PopLight;
+    src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: PopMedium;
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+body {
+    font-family: PopLight;
+}
+
+
+
 /* Home page Slider */
 .carousel-item {
   height: 100vh;
@@ -92,21 +113,6 @@
     padding: 6px;
 }
 
-
-@media screen and (max-device-width: 480px){
-  #mainlogo {
-    width: 100%;
-  }
-
-  .carousel-caption > .display-4 {
-    font-size: 2rem;
-  }
-
-  .logo {
-        margin-left: 25%;
-  }
-}
-
 /* logo startup expo*/
 .logo {
     max-width: 8rem;
@@ -127,10 +133,14 @@
     transform: translate(-50%, -50%);
     position:absolute;
     z-index:100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #mainlogo > img {
-    height: 100%;
-    width: 100%;
+    height: 300px;
+    width: 300px;
 }
 
 /* Opacity for carousel*/
@@ -142,7 +152,7 @@
   bottom:0;
   left:0;
   right:0;
-  background:rgba(0,0,0,0.6);
+  background:rgba(0, 0, 0, 0.4);
 }
 
 
@@ -162,7 +172,7 @@ ion-icon {
 
 .reset-a:hover {
     text-decoration: none;
-    color: cadetblue;
+    color: #9a24c1;
     outline: 0;
     cursor: pointer;
 }
@@ -190,11 +200,11 @@ ion-icon {
 }
 
 /* remove rounding from cards, buttons and inputs */
-.card, .btn, .form-control { border-radius: 0; }
+/* .card, .btn, .form-control { border-radius: 0; } */
 
 /* Home page navigation */
 #homenav {
-    font-family: 'Josefin Slab', serif; 
+    font-family: 'Poppins', sans-serif; 
     position:absolute;
     z-index: 999; 
     width:100%
@@ -600,6 +610,111 @@ FROM THE TEMPLATE |   | --------------------------------------------------------
     }
 }
 
+.btn-lg {
+    display: inline-block;
+    text-decoration: none;
+    border: 5px solid #C21D56;
+    box-shadow: 0px 4px 4px rgba(#7D3575, 0.25);
+    border-radius: 20px;
+    font-family: PopMedium;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    color: #23D9B7;
+    padding: 0.2rem 2.5rem;
+    margin: 2rem 0.5rem;
+    backface-visibility: hidden;
+    transition: all 0.3s;
+}
+
+.btn-lg:hover {
+    color: #D7F205;
+    border: 5px solid #D7F205;
+    transform: scale(1.2);
+}
+
+/* Waves below about*/
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.waveWrapper .row {
+    position: relative;
+    z-index: 16;
+    padding: 1rem;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave2 {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+/* Waves end*/
+
+
 @media screen and (min-width: 1200px) {
     .homepage-featured-events {
         min-height: 1480px;
@@ -669,3 +784,22 @@ FROM THE TEMPLATE |   | --------------------------------------------------------
         left: 475px;
     }
 }
+
+@media only screen and (max-device-width: 600px){
+    #mainlogo {
+      width: 100%;
+    }
+  
+    #mainlogo > img {
+      height: 200px;
+      width: 200px;
+  }
+  
+    .carousel-caption > .display-4 {
+      font-size: 2rem;
+    }
+  
+    .logo {
+          margin-left: 25%;
+    }
+  }

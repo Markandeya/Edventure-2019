@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./bootstrap-core/bootstrap.css">
   <link rel="stylesheet" href="./assets/css/timer.css">
   <link rel="stylesheet" href="./assets/css/custom.css">
-  <title>Edventure '19</title>
+  <title>E-NOVUS '20</title>
 
   <!-- Animation CSS -->
   <link rel="stylesheet" href="./assets/css/aos.css">
@@ -24,18 +24,18 @@
     </style>
 
   <!-- Favicon -->
-  <link rel="icon" href="./assets/img/favicon.png" type="image/gif" sizes="16x16">
+  <!-- <link rel="icon" href="./assets/img/favicon.png" type="image/gif" sizes="16x16"> -->
 
 
   <!-- Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
 
   <!-- Glyphicons -->
 
   <!-- Navbar -->
 </head>
 
-<body style="font-family: 'Josefin Slab', serif; background-color: rgba(1,153,153)">
+<body>
   <div id="overlay">
     <div class="circle">
       <div class="wave"></div>
@@ -47,7 +47,7 @@
   <nav id="homenav" style="font-size: 1.5rem" class="navbar navbar-expand-lg navbar-dark navbar-inner">
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
-        EDVENTURE '19
+        E-NOVUS '20
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,42 +61,53 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#events">EVENTS</a>
+            <a class="nav-link" href="#">EVENTS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./workshops.html">WORKSHOPS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./competitions.html">COMPETITIONS</a>
+            <a class="nav-link" href="#">COMPETITIONS</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+    <!-- Toast -->
+    <div class="toast" data-autohide="false" style="position: absolute; z-index: 99999;top:0;right: 0;">
+      <div class="toast-header">
+        <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect fill="#9a24c1" width="100%" height="100%" /></svg>
+        <strong class="mr-auto">E-NOVUS '20</strong>
+        <!-- <small class="text-muted">11 mins ago</small> -->
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+      </div>
+      <div class="toast-body">
+        <p>Workshop registrations are now open!</p>
+        <a href="./workshops.html" class="btn btn-sm btn-primary">Take me there</a>
+      </div>
+    </div>
+
   <!-- Slider -->
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4500">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <div class="container" id="mainlogo">
-        <img src="./assets/img/Untitled-2.png" alt="Edventure 2019">
+        <img src="./assets/img/enovus-glow.png" style="transform: translate(0, 10%);" alt="E-NOVUS 2020">
+        <!-- <h1 class="text-center text-white" style="font-family: PopLight; font-size: 5rem;text-shadow: 2px 2px 10px;">E-NOVUS '20</h1> -->
         <br>
         <br>
-        <p style="width: 100%" class="text-center">
-          <a style="cursor: default" href="#" class="btn btn-dark"><strong>M</strong></a>
-          <a style="cursor: default" href="#" class="btn btn-dark"><strong>A</strong></a>
-          <a style="cursor: default" href="#" class="btn btn-dark"><strong>Y</strong></a>
-
-          <a style="cursor: default" href="#" class="btn btn-warning"><strong>10th</strong></a>
-          <a style="cursor: default" href="#" class="btn btn-warning"><strong>11th</strong></a>
-          <a style="cursor: default" href="#" class="btn btn-warning"><strong>12th</strong></a>
-
-        </p> 
+        <div style="width: 100%;display: flex;flex-direction: column;justify-content: center;
+        " class="text-white text-center font-weight-bold">
+          <div style="text-shadow: 2px 2px 10px;">
+            <h1 class="text-center" style="font-family: PopLight; font-size: 2rem;"> Feb 29 - Mar 1, 2020</h1>
+            <h2 class="text-center" style="font-family: PopLight; font-size: 1.3rem;">College of Engineering Trivandrum</h2>
+          </div>
+        </div> 
         <br>
-        <!-- Display the countdown timer in an element -->
-        <h1 class="text-center font-weight-bold" style="font-size:3.4vh;color: lightgrey">Hurry up. Only <span
-            id="demo"></span> left. 
-            <br><br>
-
-        <a class="reset-a" href="https://www.yepdesk.com/embed/buy-tickets/5cb7e53ce4b0df32877ef035/private/b2o2gethtn"> <strong id="registernow"> Register Now</strong></h1></a>
+        <a class="btn-lg reset-a" style="color: white;" >Coming soon!</a>
       </div>
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -105,19 +116,19 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('./assets/img/img3.jpg')">
+        <div class="carousel-item active" style="background-image: url('./assets/img/homepage/people.jpg')">
           <div class="carousel-caption d-md-block">
 
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('./assets/img/img2.jpg')">
+        <div class="carousel-item" style="background-image: url('./assets/img/homepage/talk.jpg')">
           <div class="carousel-caption d-md-block">
 
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('./assets/img/new/bg21.JPG')">
+        <div class="carousel-item" style="background-image: url('./assets/img//homepage/people.jpg')">
           <div class="carousel-caption d-md-block">
             <!--h2 class="display-4">Motivate.</h2>
             <p class="lead">To solve cutting edge problems.</p-->
@@ -136,65 +147,72 @@
   </header>
 
   <!-- Aboutstyle="box-shadow: inset -8px 13px 68px 2px rgba(0,0,0,0.28);" -->
-  <section>
-    <div class="container text-center"></div>
-    <div class="homepage-info-section pl-3" style="background-image: url('./assets/img/bgm2.jpg');background-size: cover">
+  <section style="font-family: 'Roboto'; margin-top: -1px;">
+    <div class="waveWrapper waveAnimation">
       <div class="row" style="max-width: 100%">
           <div class="col-12 col-md-8 col-lg-8 text-white">
             <header class="entry-header ">
-              <h2 class="entry-title text-white" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000"><span><img src="./assets/img/new/favicon.png" style="max-height: 5rem;padding-bottom: 1rem;" alt="logo"></span>About <span style="animation: text-flicker-in-glow 4s infinite;">Edventure</span>.
-              </h2>
+              <h1 class="entry-title text-white" data-aos="fade-down" data-aos-delay="50" data-aos-duration="2000">
+                <!--  <span><img src="./assets/img/new/favicon.png" style="max-height: 5rem;padding-bottom: 1rem;" alt="logo"></span> -->
+                About <span style="animation: text-flicker-in-glow 4s infinite;">E-NOVUS</span>
+              </h1>
             </header>
             <br>
             <div>
               <p class="lead " data-aos="fade-up" data-aos-delay="60" data-aos-duration="2000">
-                Innovation and Entrepreneurship Development Cell of CET (IEDC-CET) brings to you the 2nd edition of Edventure series, Edventure'19, in collaboration with the Kerala Startup Mission (KSUM), Trest Park, Kerala State Council for Science, Technology and Environment (KSCSTE) and the CET Alumni Association (CETAA).
+                Enovus, the flagship event of IEDC-CET is an entrepreneurship summit which brings together entrepreneurs and experts from various fields to share the experiences that moulded them to their level of dexterity and finesse.
               </p>
               <p class="lead" data-aos="fade-up" data-aos-delay="60" data-aos-duration="2000">
-              It is an event spanning three days to bring together thinkers and doers in a provocative setting with events such as the Project Expo, Talk Series and a lot more!
-            </p>
-              <p class="lead" data-aos="fade-up" data-aos-delay="60" data-aos-duration="2000">
-              The mission of the Edventure'19 is to establish and roll out a 
-              continuing process of empowering 
-              entrepreneurs and startups by 
-              providing the right infusion of 
-              exposure, networking, support and inspiration.
-              Edventure 19 aims at creating a flourishing startup ecosystem in CET for a dynamic student community.
-            </p>
-            <p class="lead" data-aos="fade-up" data-aos-delay="60" data-aos-duration="2000">
-            It is certainly a force to reckon with for budding entrepreneurs at all levels to exemplify the holistic worldview and positively impact our planet in new ways.
+                College of Engineering Trivandrum (CET) has been one of the few Govt institute in Kerala trying to build the entrepreneurship & start-up ecosystem through the MHRD initiatives and Innovation and Entrepreneurship and Development Cells (IEDC) under the Kerala Startup Mission. </p>
+              <p class="lead" data-aos="fade-up" data-aos-delay="60" data-aos-duration="2000">Every year CET hosts an E-Summit and this year, it has been named E-NOVUS, to promote the spirit of entrepreneurship among the youth of the country. This year, E-NOVUS will be hosted at CET during FEB 29 to MARCH 1 , 2020. As part of E-NOVUS this year, we are proud to launch the first edition of the Entrepreneurship Awareness Programme (EAP).
               </p>
+            
               <br>
             </div>
           </div>
 
-          <div class="col-12 col-md-4 col-lg-4 pt-5">
-            <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" src="./assets/img/homepage/cetaa.png" alt="" class="logo">
+          <div class="col-12 col-md-4 col-lg-4 pt-5" >
+            <!-- <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" src="./assets/img/homepage/cetaa.png" alt="" class="logo"> -->
             <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" src="./assets/img/homepage/iedc.png" alt="" class="logo">
-            <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" src="./assets/img/homepage/kscste.png" alt="" class="logo">
+            <!-- <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" src="./assets/img/homepage/kscste.png" alt="" class="logo">
             <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" src="./assets/img/homepage/kerala.png" alt="" class="logo">
-            <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" src="./assets/img/homepage/trest.png" alt="" class="logo">
+            <img data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" src="./assets/img/homepage/trest.png" alt="" class="logo"> -->
           </div>
+      </div>
+      <div class="waveWrapperInner bgTop">
+        <div class="wave2 waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+      </div>
+      <div class="waveWrapperInner bgMiddle">
+        <div class="wave2 waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+      </div>
+      <div class="waveWrapperInner bgBottom">
+        <div class="wave2 waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
       </div>
     </div>
   </section>
-<div class="container-fluid text-white p-5" style="background-image: url(./assets/img/bg.jpg); background-repeat: no-repeat; background-attachment: fixed;" >
+
+
+<div class="container-fluid text-dark p-5" 
+style="background-image: url('./assets/img/square.png'); background-repeat: no-repeat; background-position: left;" 
+>
   <div class="container" >
   <div class="row">
     <div class="col-md-12">
       <h1 class="display-6 font-weight-bold text-center" id="events">HIGHLIGHT OF THE EVENT.</h1>
       <div class="container-fluid text-center">
         <div class="row" style="flex-direction: row;justify-content: space-evenly; align-items: center;">          
-          <div class="card margin bg-light text-dark" style="width: 18rem;height: 28rem " data-aos="slide-up" data-aos-delay="100" data-aos-duration="2000">
+          <div class="card mb-3 bg-dark text-white" style="width: 18rem;height: 34rem;border-radius: 5px; " data-aos="slide-up" data-aos-delay="100" data-aos-duration="2000">
             <img src="./assets/img/new/projectexpo.jpg" class="card-img-top" alt="image">
             <div class="card-body">
-              <h5 class="card-title">Project Expo</h5>
+              <h5 class="card-title">Entrepreneurship Awareness Program</h5>
               <p class="card-text">
-                A confluence of the hottest trailblazing technology thats born out of the minds of creators.
+                EAP is a one-of-a-kind accelerator program aimed at fostering entrepreneurship talent among participants and providing them with a 
+                holistic overview of the start-up ecosystem.  
+
             </div>
             <span style="margin-bottom: 10px">
-                <a href="https://www.yepdesk.com/embed/buy-tickets/5cb7e53ce4b0df32877ef035/private/b2o2gethtn" class="btn btn-primary" style="animation: heartbeat 1s infinite;">Register</a>
-                <a href="./projectexpo.html" class="btn btn-warning">Learn more</a>
+                <!-- <a href="https://www.yepdesk.com/embed/buy-tickets/5cb7e53ce4b0df32877ef035/private/b2o2gethtn" class="btn btn-primary" style="animation: heartbeat 1s infinite;">Register</a> -->
+                <a href="#" class="btn btn-secondary">Coming soon!</a>
             </span>
           </div>
           </div>
@@ -204,37 +222,37 @@
   
 </div>
 <!-- What to expect for startup -->
-<div class="container" >
+<div class="container" style="background-color: rgba(38, 39, 60, .9); color: white; border-radius: 10px;">
   <div style="justify-content: center; align-items: center"> 
     <h1 class="display-6 font-weight-bold text-center pb-5 pt-5" id="events">WHAT TO EXPECT ?</h1>
 
     <div class="row pb-5">
       <div class="col-md-4" style="text-align: center">
         <ion-icon name="people" style="font-size: 50px"></ion-icon>
-        <h4>INVESTOR INTERACTION</h4>
+        <h4 class="text-warning">INVESTOR INTERACTION</h4>
       </div>
       <div class="col-md-4" style="text-align: center">
         <ion-icon name="person-add" style="font-size: 50px"></ion-icon>
-        <h4>NETWORKING OPPORTUNITIES</h4>
+        <h4 class="text-warning">NETWORKING OPPORTUNITIES</h4>
       </div>
       <div class="col-md-4" style="text-align: center">
         <ion-icon name="logo-euro" style="font-size: 50px"></ion-icon>
-        <h4>FUNDING</h4>
+        <h4 class="text-warning">FUNDING</h4>
       </div>
     </div>
     
     <div class="row pb-5" class="text-center">
       <div class="col-md-4" style="text-align: center">
         <ion-icon name="rocket" style="font-size: 50px"></ion-icon>
-        <h4>CHANCE FOR PITCH</h4>
+        <h4 class="text-warning">CHANCE FOR PITCH</h4>
       </div>
       <div class="col-md-4" style="text-align: center">
         <ion-icon name="school" style="font-size: 50px"></ion-icon>
-        <h4>STUDENTS WORKFORCE</h4>
+        <h4 class="text-warning">STUDENTS WORKFORCE</h4>
       </div>
       <div class="col-md-4" style="text-align: center">
         <ion-icon name="trending-up" style="font-size: 50px"></ion-icon>
-        <h4>NEW OPPORTUNITIES</h4>
+        <h4 class="text-warning">NEW OPPORTUNITIES</h4>
       </div>
     </div>
 
@@ -243,7 +261,8 @@
 </div>
 </div>
     <!-- Events and Workshops -->
-    <div class="container-fluid text-center text-white" style="background-image: url('./assets/img/bgm2.jpg'); background-size: cover">
+    <div style="background-image: url('./assets/img/dark-blue-wave.png'); height: 150px;background-repeat: no-repeat; background-size: cover; width: 100%;"></div>
+    <div class="container-fluid text-center text-white" style="background-color: #001757;">
       <h1 class="display-6 font-weight-bold text-center pt-5" id="events" >Workshops, Competitions and other Events.</h1>
       <div class="row" style="flex-direction: row;justify-content: space-evenly; align-items: center;">
 
@@ -252,8 +271,9 @@
             <img src="./assets/img/new/workshop-01.png" class="card-img-top" alt="image">
             <div class="card-body">
               <h5 class="card-title">Workshops</h5>
-              <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">Master new,
-                purpose-driven skills and acheive goals with expert instruction and guidance.
+              <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">
+                E Novus hosts variety of  workshops that inculcate skills such as adaptability, perseverance,curiosity
+                 that one must master to become successful including 3D printing, AR with Unity and Entrepreneur bootcamp. 
               </p>
             </div>
             <ul class="list-group list-group-flush">
@@ -266,12 +286,13 @@
           <img src="./assets/img/new/competition-01.png" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">Competitions</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">An entrepreneurial
-              experience in a competitive setting to broaden your horizons and to bring out your best.
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">
+              Putting the entrepreneurial prowess of participants to test, competitions broaden horizons and come with exciting prizes.
+ An Idea pitching competition to flex their creative muscles, quiz, hackathon and much more!
             </p>
           </div>
           <ul class="list-group list-group-flush">
-            <a href="./competitions.html" class="btn btn-primary">Learn more</a>
+            <a href="#" class="btn btn-secondary">Coming soon!</a>
           </ul>
         </div>
         
@@ -279,34 +300,10 @@
           <img src="./assets/img/new/panel discussion-01.png" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">Panel Disussions</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">An unforgettable
-              gathering of minds and perspectives on the pressing issues of today's society.
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">Presenting heated panel discussions of 
+              eminent personalities and industry leaders 
+              on some of the hottest topics of today and on how they managed to carve their nichè in the world of entrepreneurship.
             </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <a href="./paneldiscussions.html" class="btn btn-primary">Learn more</a>
-          </ul>
-        </div>
-
-        <div class="card margin" style="width: 18rem;" data-aos="slide-up" data-aos-delay="100" data-aos-duration="2000">
-          <img src="./assets/img/new/bootcamp-01.png" class="card-img-top" alt="image">
-          <div class="card-body">
-            <h5 class="card-title">Bootcamp Summit</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">A memorable
-              gathering of various IEDC chapters of Kerala to plant and grow relations.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <a href="./bootcamp.html" class="btn btn-primary">Learn more</a>
-          </ul>
-        </div>
-
-        <div class="card margin" style="width: 18rem;" data-aos="slide-up" data-aos-delay="100" data-aos-duration="2000">
-          <img src="./assets/img/new/talk series-01.png" class="card-img-top" alt="image">
-          <div class="card-body">
-            <h5 class="card-title">Talk Series</h5>
-            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">A celebration of
-              incredible stories and thoughts of outliers from a diversity of fields.
           </div>
           <ul class="list-group list-group-flush">
             <a href="#" class="btn btn-secondary">Coming soon!</a>
@@ -314,6 +311,31 @@
         </div>
 
         <div class="card margin" style="width: 18rem;" data-aos="slide-up" data-aos-delay="100" data-aos-duration="2000">
+          <img src="./assets/img/new/bootcamp-01.png" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Informals</h5>
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">An array of informal programmes ranging from simple games to stand up comedy, and a mind blowing pro show night, to keep the participants engaged. 
+              Events which are jam-packed with fun, mystery and thrill. 
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <a href="#" class="btn btn-secondary">Coming soon!</a>
+          </ul>
+        </div>
+
+        <div class="card margin" style="width: 18rem;" data-aos="slide-up" data-aos-delay="100" data-aos-duration="2000">
+          <img src="./assets/img/new/talk series-01.png" class="card-img-top" alt="image">
+          <div class="card-body">
+            <h5 class="card-title">Talk Series</h5>
+            <p class="card-text" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">An unmissable platform for students to interact with pathbreakers and experts in a face-to-face conversation. 
+              Outliers share exciting anecdotes from their escapades in this celebration of struggle and triumph.
+          </div>
+          <ul class="list-group list-group-flush">
+            <a href="#" class="btn btn-secondary">Coming soon!</a>
+          </ul>
+        </div>
+
+        <!-- <div class="card margin" style="width: 18rem;" data-aos="slide-up" data-aos-delay="100" data-aos-duration="2000">
           <img src="./assets/img/new/conclave-01.png" class="card-img-top" alt="image">
           <div class="card-body">
             <h5 class="card-title">Conclave</h5>
@@ -324,7 +346,7 @@
           <ul class="list-group list-group-flush">
             <a href="#" class="btn btn-secondary">Coming soon!</a>
           </ul>
-        </div>
+        </div> -->
 
       </div>
 
@@ -446,11 +468,11 @@
 </div> -->
 
     <!-- About IEDC-->
-    <div class="container-flex  text-center" style="background-color: ghostwhite;" style="min-height: 85vh">
+    <div class="container-flex  text-center" style="background-color: ghostwhite;" style="min-height: 85vh;">
 
       <h1 class="display-5 p-4" data-aos="fade-in" data-aos-delay="50" data-aos-duration="2000">IEDC at CET.
       </h1>
-      <div style="display: flex;justify-content: center;align-items: center">
+      <div style="display: flex;justify-content: center;align-items: center;margin-bottom: -20px;">
         <p class="container justify-content-center lead p-3" data-aos="fade-in" data-aos-delay="50"
           data-aos-duration="1000">
           The Innovation and Entrepreneurship Development Cell (IEDC) is an active student-run cell under College of
@@ -480,40 +502,39 @@
      </section> -->
       </div>
       <!-- Footer -->
-      <div class="container-flex">
-        <footer class="container py-5" style="background-color: rgb(1, 153, 153)">
+      <div class="container-flex  bg-dark text-left">
+        <footer class="container py-5">
           <div class="row">
             <div class="col-md-4 col-lg-4">
-              <h1 style="font-weight: bolder;">Edventure 2019</h1>
+              <h1 class="text-white" style="font-weight: bolder;">E-NOVUS 2020</h1>
               <h4 class="text-dark">Contact us</h4>
               <ul class="list-unstyled text-white" style="font-size: 1.2rem">
-                <li><a class="reset-a" >Seeyan P A (CEO)</a></li>
-                <li><a class="reset-a" >Phone: 9847132910</a></li>
+                <li><a class="reset-a" >Anjith Krishna (CEO)</a></li>
+                <li><a class="reset-a" >Phone: +91 96568 98132</a></li>
                 <br>
-                <li><a class="reset-a" >Uzam Mohammed (CFO)</a></li>
-                <li><a class="reset-a" >Phone: 8089281200</a></li>
+                <li><a class="reset-a" >Amal Ashok (COO)</a></li>
+                <li><a class="reset-a" >Phone: +91 86069 01776</a></li>
                 <br>
                 <li><a class="reset-a">Email at: iedc@cet.ac.in</a></li>
                 <li><a class="reset-a">Website: iedc.cet.ac.in</a></li>
               </ul>
             </div>
-            <div class="col-md-4 col-lg-4">
+            <div class="col-md-4 col-lg-4 ">
               <h3 class="text-warning">Events</h3>
-              <ul class="list-unstyled text-white" style="font-size: 1.2rem">
-                <li><a class="reset-a" href="./projectexpo.html">Project Expo</a></li>
+              <ul class="list-unstyled text-white " style="font-size: 1.2rem; display: flex; justify-content: center;
+              flex-direction: column; height: 100%;">
                 <li><a class="reset-a" href="./workshops.html">Workshop</a></li>
-                <li><a class="reset-a" href="./competitions.html">Competitions</a></li>
-                <li><a class="reset-a" href="./paneldiscussions.html">Panel Discussions</a></li>
-                <li><a class="reset-a" >Talk Series</a></li>
-                <li><a class="reset-a" >Conclave</a></li>
-                <li><a class="reset-a" href="./bootcamp.html">Bootcamp Summit</a></li>
+                <li><a class="reset-a" href="#">Competitions</a></li>
+                <li><a class="reset-a" href="#">Panel Discussions</a></li>
+                <li><a class="reset-a" href="#">Talk Series</a></li>
+                <li><a class="reset-a" href="#">Informals</a></li>
             </div>
             <div class="col-md-4 col-lg-4" style="display: flex;justify-content: center;align-items: center;">
-              <a href="https://www.yepdesk.com/embed/buy-tickets/5cb7e53ce4b0df32877ef035/private/b2o2gethtn" class="btn btn-warning btn-lg btn-block"> REGISTER</a>
+              <a class="btn btn-warning btn-block" style="cursor: pointer;">Coming soon</a>
             </div>
           </div>
           <div class="row text-center" style="justify-content: center; flex-direction: column;">
-            <p class="text-dark">IEDC CET 2019 &copy;  </p>
+            <p class="text-white">IEDC CET 2020 &copy;  </p>
             <p>
               <a href="https://www.facebook.com/cetedc/" class="reset-a" size="large">
                 <ion-icon name="logo-facebook"></ion-icon>
@@ -615,8 +636,11 @@
     <!-- Glyphicons -->
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
-    <script src="./assets/js/timer.js"></script>
 
+
+    <script>
+      $('.toast').toast('show')
+      </script>
 </body>
 
 </html>
